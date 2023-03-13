@@ -18,7 +18,31 @@ void init (int argc, char** argv){
     }
 
 }
+}
 
+void WB () {
+
+}
+void Issue() {
+  
+}
+void Dispatch(){
+
+}
+void Decode () { 
+
+}
+
+void Rename () {
+
+}
+
+void fetch(unsigned int x) {
+
+}
+unsigned int commit(unsigned int c){
+  
+}
 
 int main(int argc, char** argv){
   std::cout << "hello world \n ";
@@ -38,4 +62,3 @@ int main(int argc, char** argv){
   emitOutput(); 
   */
   return 0;
-}
