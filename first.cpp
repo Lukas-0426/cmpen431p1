@@ -22,7 +22,7 @@ void init (int argc, char** argv){
 
 int main(int argc, char** argv){
   fprint("hello world");
-  init(argc,argv); 
+  /*init(argc,argv); 
   unsigned int committedInsts=0; 
   unsigned int fetchIndex=0;
   while(committedInsts<icount){
@@ -36,5 +36,6 @@ int main(int argc, char** argv){
     cyclecount++; 
   }
   emitOutput(); 
+  */
   return 0;
 }
