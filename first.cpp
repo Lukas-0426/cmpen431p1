@@ -21,7 +21,7 @@ void init (int argc, char** argv){
 
 
 int main(int argc, char** argv){
-  print( "hello world \n ");
+  std::cout << "hello world \n ";
   /*init(argc,argv); 
   unsigned int committedInsts=0; 
   unsigned int fetchIndex=0;
