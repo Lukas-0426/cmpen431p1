@@ -18,7 +18,7 @@ void init (int argc, char** argv){
     }
 
 }
-}
+
 
 void WB () {
 
@@ -41,7 +41,7 @@ void fetch(unsigned int x) {
 
 }
 unsigned int commit(unsigned int c){
-  
+
 }
 
 int main(int argc, char** argv){
