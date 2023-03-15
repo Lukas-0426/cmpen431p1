@@ -1,33 +1,35 @@
 
 
-def fetch(fetchIndex)
+def fetch(fetchIndex):
 
-def decode()
 
-def rename()
+def decode(): 
 
-def commit(c)
 
-def init(a, b)
+def rename():
 
-def writeback()
+def commit(c):
 
-def Issue()
+def init(a, b):
 
-def Dispatch()
+def writeback():
 
-def main () 
-	init(argc, argv);
-	uint32 committedInsts=0;	 
+def Issue():
 
-	while(committedInsts <icount)
+def Dispatch():
+
+def main ():
+	init(argc, argv)
+	int committedInsts = 0;	 
+
+	while(committedInsts <icount):
 		committedInsts = commit(committedInsts)	
-		writeback();
-		Issue();
-		Dispatch();
-		rename();
-		decode();
+		writeback()
+		Issue()
+		Dispatch()
+		rename()
+		decode()
 		fetchIndex = fetch(fetchIndex)
-		cyclecount++;
-	emitOutput();
-	return 0;
+		cyclecount++
+	emitOutput()
+	return 0
