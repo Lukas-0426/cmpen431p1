@@ -1,6 +1,17 @@
+	import csv
+
+d = []
+f = []
+r = []
+c = []
+wb = []
+iss = []
+dis = []
 
 
 def fetch(fetchIndex):
+		
+
 
 
 def decode(): 
@@ -12,6 +23,12 @@ def commit(c):
 
 def init(a, b):
 
+
+	with open('file.csv', 'r') as csvfile:
+			reader = csv.reader(csvfile, delimiter=',', skipinitialspace=True)    			for row in reader:
+       			 # do something with the row
+
+
 def writeback():
 
 def Issue():
@@ -20,7 +37,7 @@ def Dispatch():
 
 def main ():
 	init(argc, argv)
-	int committedInsts = 0;	 
+	committedInsts = 0;	 
 
 	while(committedInsts <icount):
 		committedInsts = commit(committedInsts)	
@@ -31,5 +48,5 @@ def main ():
 		decode()
 		fetchIndex = fetch(fetchIndex)
 		cyclecount++
-	emitOutput()
-	return 0
+		emitOutput()
+		return 0
