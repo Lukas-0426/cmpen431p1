@@ -1,5 +1,6 @@
-	import csv
-
+	
+import csv
+import pandas as pd	
 d = []
 f = []
 r = []
@@ -9,44 +10,38 @@ iss = []
 dis = []
 
 
-def fetch(fetchIndex):
+#def fetch(fetchIndex):
 		
 
 
 
-def decode(): 
+#def decode(): 
 
 
-def rename():
+#def rename():
 
-def commit(c):
+#def commit(c):
 
-def init(a, b):
+def init():
+	instructions = pd.read_csv('ex1.txt')
+	for i in len(range(instructions)):
+		print(i)
 
+#def writeback():
 
-	with open('file.csv', 'r') as csvfile:
-			reader = csv.reader(csvfile, delimiter=',', skipinitialspace=True)    			for row in reader:
-       			 # do something with the row
+#def Issue():
 
+#def Dispatch():
 
-def writeback():
+init()
+committedInsts = 0;	 
 
-def Issue():
+while(committedInsts <icount):
+	committedInsts = commit(committedInsts)	
+	writeback()
+	Issue()
+	Dispatch()
+	rename()
+	decode()
+	fetchIndex = fetch(fetchIndex)
 
-def Dispatch():
-
-def main ():
-	init(argc, argv)
-	committedInsts = 0;	 
-
-	while(committedInsts <icount):
-		committedInsts = commit(committedInsts)	
-		writeback()
-		Issue()
-		Dispatch()
-		rename()
-		decode()
-		fetchIndex = fetch(fetchIndex)
-		cyclecount++
-		emitOutput()
-		return 0
